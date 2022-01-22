@@ -1,0 +1,6 @@
+---
+  name: demo playbook
+  hosts: 192.168.0.229
+  tasks:
+    - name: check the router ip
+      ping: 192.168.0.1

@@ -1,0 +1,9 @@
+---
+- name: Test playbook
+  hosts: 192.168.0.229
+  tasks:
+    - name: Spooler service is enabled and running
+      win_service:
+        name: Spooler
+        start_mode: auto
+        state: running
